@@ -22,7 +22,7 @@ session_start();
 
     }
 
-    $sql2 = "SELECT * FROM message INNER JOIN user ON message.username = user.username";
+    $sql2 = "SELECT * FROM message INNER JOIN user ON message.username = user.username ORDER BY message.id";
     $result2 = mysqli_query($conn, $sql2);
 
 ?>
